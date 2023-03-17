@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+
+
+:root{
+    --fonte1:'Yanone Kaffees',arial,Verdana,sans-serif;
+    --font2:Verdana,arial,sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+@font-face {
+    font-family:'Yanone Kaffees' ;
+    src: url('../fontes/YanoneKaffeesatz-VariableFont_wght.ttf')format('truetype'),url('../fontes/YanoneKaffeesatz-VariableFont_wght.ttf')format('opentype');
+}
+
+html, body{
+    min-height: 100%;
+    
+    background-color: darkgray;
+    font-family: var(--fonte1);
+    font-weight: normal;
+    font-size: 1.7em;
+
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+}
+
+header > h1{
+    font-family: var(--font2);
+    font-weight: bolder;
+    padding-top: 50px;
+    font-style: italic;
+    
+
+  
+
+}
+header >p{
+    padding-bottom: 50px;
+
+}
+ a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+
+ }
+a:hover{
+    text-decoration: underline;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section >p{
+    padding-bottom: 2em;
+}
+
+section.imagem{
+    background-color: rgba(31, 30, 30, 0.582);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.658);
+    background-attachment: fixed;
+
+}
+
+section.imagem >p{
+    background-color: rgba(22, 22, 22, 0.562);
+    display: inline-block;
+    padding: 10px;
+
+
+}
+
+section#img01{
+    background-image: url('../d12/imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url('../d12/imagens/background002.jpg');
+    background-position: right center;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
